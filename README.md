@@ -1,8 +1,13 @@
 <h1 align="center"> 🎧🗃 Bot_Music - Jester Bot</h1>
 <p align="center">Apenas mais um Bot de música genérico para o Discord, só que com código aberto '-'</p>
-<p align="center">Esse bot foi feito apartir de JavaScript, Discord.js na versão 13.7.0v ou superior </p>
+<p align="center">Esse bot foi feito apartir de JavaScript, Discord.js na versão 13.7.0v</p>
 
-<p align="center"><img align="center" src="https://cdn.discordapp.com/attachments/1019779765227503626/1166186155641942046/selfie-f-15e-strike-eagle-088393805_prevstill.png?ex=66270e7e&is=6614997e&hm=da1bfe3444637819ab39b1415523979c300aa984642ffc7c904d344bd1ead9ab&"></p>
+> [!WARNING]  
+> **Esse projeto é antigo.**</br>
+> Pode não representar direito como são os meus novos projetos.</br>
+> **NOTE QUE: NENHUMA alteração foi feita desde 2023 a 2024 anos.**
+
+... Marketdown antiga:
 
 ## 📑🖋 License:
 
@@ -20,3 +25,4 @@ Links:
 ### 🧩📻 Dicas:
 
 super importante: <a href="https://www.youtube.com/watch?v=o-YBDTqX_ZU">Explicativo</a>
+
