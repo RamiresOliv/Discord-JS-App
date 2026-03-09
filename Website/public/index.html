@@ -1,0 +1,87 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/webp" href="{Client.user.avatarURL}" />
+    <link rel="stylesheet" href="assets/style/main.css" />
+    <title>LeuBot</title>
+  </head>
+  <script>
+    if (!window.location.href.endsWith("home")) {
+      window.location.replace(
+        (window.location.href + "//").replace("///", "") + "/home"
+      );
+    }
+
+    var broken = false;
+    var oldDataMusics = -10;
+    var oldDataServers = -11;
+    interval = setInterval(function () {
+      fetch("/api/updatelul", { method: "GET" })
+        .then(function (response) {
+          if (response.ok) return response.json();
+          throw new Error("Request failed.");
+        })
+        .then(function (data) {
+          if (
+            data.ServersSize != oldDataServers ||
+            data.MusicsPlayedTotal != oldDataMusics
+          ) {
+            oldDataServers = data.ServersSize;
+            oldDataMusics = data.MusicsPlayedTotal;
+            document.getElementById(
+              "header"
+            ).innerHTML = `${data.ServersSize} servidores, total de ${data.MusicsPlayedTotal} músicas tocadas.`;
+          }
+        })
+        .catch(function (error) {
+          if (!broken && error == "TypeError: Failed to fetch") {
+            broken = true;
+            console.warn(
+              "updater of servers lenght and musics broken. Reset the page for get back online"
+            );
+            clearInterval(interval);
+          }
+        });
+    }, 1000);
+    setTimeout(() => {
+      console.clear();
+    }, 900);
+  </script>
+  <style></style>
+  <body>
+    <div id="container">
+      <h1>LEUBOT</h1>
+      <br />
+      <h3 id="header">
+        {Client.ServersSize} servidores, total de {DB.MusicsPlayedTotal} músicas
+        tocadas.
+      </h3>
+      <p>Apenas mais um Bot de música genérico para o Discord '-'</p>
+      <br />
+      <br />
+      <p>
+        Discord.js:
+        <idk
+          style="
+            padding: 2px;
+            background-color: rgba(30, 31, 39, 0.753);
+            border-radius: 2px;
+            color: rgb(230, 230, 230);
+            font-size: 18px;
+            border: 10px;
+          "
+          >v{Discord.version}</idk
+        >
+      </p>
+      <p>This app invites are not disponible.</p>
+      <p><a href="./privacy">Privacy page</a></p>
+      <br />
+    </div>
+  </body>
+</html>

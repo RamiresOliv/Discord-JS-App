@@ -1,0 +1,34 @@
+{
+  "name": "bot_music",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\"> 🎧🗃 Bot_Music - Jester Bot</h1>\r <p align=\"center\">Apenas mais um Bot de música genérico para o Discord, só que com código aberto '-'</p>\r <p align=\"center\">Esse bot foi feito apartir de JavaScript, Discord.js na versão 13.7.0v ou superior </p>",
+  "main": "index.js",
+  "dependencies": {
+    "@discordjs/opus": "^0.9.0",
+    "@distube/spotify": "^2.0.2",
+    "@distube/youtube": "^1.0.4",
+    "@distube/yt-dlp": "^2.0.1",
+    "@distube/ytdl-core": "^4.15.8",
+    "@distube/ytpl": "^1.2.1",
+    "axios": "^1.7.9",
+    "discord.js": "^14.7.1",
+    "distube": "^5.0.4",
+    "express": "^4.18.1",
+    "fs": "^0.0.1-security",
+    "gluegun": "^4.7.1",
+    "husky": "^9.0.11",
+    "libsodium-wrappers": "^0.7.10",
+    "local-db-express": "^1.4.3",
+    "node-7z": "^3.0.0",
+    "request": "^2.81.0",
+    "superagent": "^10.1.1",
+    "tweetnacl": "^1.0.3",
+    "webp-converter": "^2.3.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

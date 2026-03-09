@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "RobotoMono-VariableFont_wght";
+  src: url("/assets/fonts/RobotoMono-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "RubikGlitchPop-Regular";
+  src: url("/assets/fonts/RubikGlitchPop-Regular.ttf");
+}
+
+#container {
+  padding: 4px;
+  margin: 10px auto;
+  max-width: 1000px;
+  max-height: 1000px;
+  border: 10px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgba(106, 32, 32, 0.761);
+}
+
+body {
+  /* font-family: sans-serif;*/
+  font-family: "RobotoMono-VariableFont_wght";
+  font-size: 20px;
+  color: rgb(187, 187, 187);
+  /* text-align: center;*/
+  background-image: url("/assets/images/BotThumb.png");
+  background-size: 15%;
+  background-repeat: repeat;
+  background-color: rgb(207, 72, 72);
+}
+h1 {
+  font-family: "RubikGlitchPop-Regular";
+  font-size: 100px;
+  color: rgb(255, 255, 255);
+}
+h2 {
+  font-family: "RubikGlitchPop-Regular";
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+}
+img {
+  border-radius: 10px;
+  width: 600px;
+}
+p {
+  color: rgb(120, 120, 120);
+}
+a {
+  color: rgb(255, 0, 0);
+}

@@ -1,0 +1,98 @@
+{
+  "defaultPrefix": "_",
+  "ownerId": "id",
+  "testStart": false,
+  "ChatCommandsDeprecatedWarning": true,
+
+  "distubeConf": {
+    "emptyCooldown": 30,
+    "nsfw": true,
+    "leaveOnStop": true,
+    "leaveOnEmpty": true,
+    "leaveOnFinish": true,
+    "emitNewSongOnly": true,
+    "emitAddSongWhenCreatingQueue": false,
+    "emitAddListWhenCreatingQueue": false,
+
+    "ffmpeg": {
+      "path": "modules/ffmpeg/ffmpeg"
+    }
+  },
+  "distubeSpotify": {
+    "api": {
+      "clientId": "id",
+      "clientSecret": "id"
+    }
+  },
+
+  "server": {
+    "port": 4040,
+    "trustProxy": true,
+    "static": "./website/public",
+    "url": "..."
+  },
+
+  "filters": {
+    "clear": {
+      "name": "clear",
+      "value": "dynaudnorm=f=200"
+    },
+    "rickroll": {
+      "name": "rickroll",
+      "value": "bass=g=33,apulsator=hz=0.06,vibrato=f=2.5,tremolo,asetrate=48000*0.8"
+    },
+    "bassboost": "bassboost",
+    "bassboost2": {
+      "name": "bassboost2",
+      "value": "bass=g=33"
+    },
+    "8d": {
+      "name": "8d",
+      "value": "apulsator=hz=0.08"
+    },
+    "nightcore": {
+      "name": "nightcore",
+      "value": "aresample=48000,asetrate=48000*1.25"
+    },
+    "vaporwave": {
+      "name": "vaporwave",
+      "value": "aresample=48000,asetrate=48000*0.8"
+    },
+    "phaser": {
+      "name": "phaser",
+      "value": "aphaser=in_gain=0.4"
+    },
+    "tremolo": "tremolo",
+    "vibrato": {
+      "name": "vibrato",
+      "value": "vibrato=f=6.5"
+    },
+    "reverse": "reverse",
+    "slowreverb": {
+      "name": "slowreverb",
+      "value": "atempo=0.85,aecho=1.0:0.5:10:0.5"
+    },
+    "treble": {
+      "name": "treble",
+      "value": "treble=g=5"
+    },
+    "normalizer": {
+      "name": "normalizer",
+      "value": "dynaudnorm=f=200"
+    },
+    "surrounding": "surround",
+    "pulsator": {
+      "name": "pulsator",
+      "value": "apulsator=hz=1"
+    },
+    "subboost": "asubboost",
+    "karaoke": {
+      "name": "karaoke",
+      "value": "stereotools=mlev=0.03"
+    },
+    "flanger": "flanger",
+    "gate": "agate",
+    "haas": "haas",
+    "mcompand": "mcompand"
+  }
+}
