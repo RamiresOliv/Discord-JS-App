@@ -5,7 +5,7 @@
 > [!WARNING]  
 > **Esse projeto é antigo.**</br>
 > Pode não representar direito como são os meus novos projetos.</br>
-> **NOTE QUE: NENHUMA alteração crítica foi feita desde 2023 a 2024 anos.**
+> **NOTE QUE: NENHUMA alteração crítica foi feita desde 2023 a 2024.**
 
 ... Marketdown antiga:
 
